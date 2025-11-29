@@ -1,12 +1,7 @@
 import { Button } from "./ui/button";
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
-
 const HeroSection = () => {
-  return (
-    <section
-      id="home"
-      className="min-h-screen flex items-center justify-center relative overflow-hidden gradient-bg"
-    >
+  return <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden gradient-bg">
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-pulse-glow" />
@@ -26,7 +21,8 @@ const HeroSection = () => {
 
             <h1 className="opacity-0 animate-slide-up animation-delay-200 text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
               Hi, I'm{" "}
-              <span className="gradient-text">John Doe</span>
+              <span className="gradient-text">
+Rafi Ahmed Eshan</span>
             </h1>
 
             <p className="opacity-0 animate-slide-up animation-delay-400 text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
@@ -46,37 +42,37 @@ const HeroSection = () => {
 
             {/* Social links */}
             <div className="opacity-0 animate-scale-in animation-delay-600 flex justify-center gap-4">
-              {[
-                { icon: Github, href: "#", label: "GitHub" },
-                { icon: Linkedin, href: "#", label: "LinkedIn" },
-                { icon: Mail, href: "#contact", label: "Email" },
-              ].map(({ icon: Icon, href, label }) => (
-                <a
-                  key={label}
-                  href={href}
-                  aria-label={label}
-                  className="p-3 glass rounded-xl hover:scale-110 hover:glow-accent transition-all duration-300"
-                >
+              {[{
+              icon: Github,
+              href: "#",
+              label: "GitHub"
+            }, {
+              icon: Linkedin,
+              href: "#",
+              label: "LinkedIn"
+            }, {
+              icon: Mail,
+              href: "#contact",
+              label: "Email"
+            }].map(({
+              icon: Icon,
+              href,
+              label
+            }) => <a key={label} href={href} aria-label={label} className="p-3 glass rounded-xl hover:scale-110 hover:glow-accent transition-all duration-300">
                   <Icon className="w-5 h-5 text-muted-foreground hover:text-accent transition-colors" />
-                </a>
-              ))}
+                </a>)}
             </div>
           </div>
         </div>
 
         {/* Scroll indicator */}
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-float">
-          <a
-            href="#about"
-            className="flex flex-col items-center gap-2 text-muted-foreground hover:text-accent transition-colors"
-          >
+          <a href="#about" className="flex flex-col items-center gap-2 text-muted-foreground hover:text-accent transition-colors">
             <span className="text-sm">Scroll Down</span>
             <ArrowDown className="w-5 h-5" />
           </a>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default HeroSection;
