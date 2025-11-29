@@ -1,38 +1,34 @@
 import { Button } from "./ui/button";
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 
 const projects = [
   {
-    title: "E-Commerce Platform",
-    description: "A full-featured online store with cart, payments, and admin dashboard built with Next.js and Stripe.",
-    tags: ["Next.js", "Stripe", "PostgreSQL", "Tailwind"],
-    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop",
+    title: "3D Product Visualization",
+    description: "Creating photorealistic 3D product renders and animations using Blender for various clients.",
+    tags: ["Blender", "3D Modeling", "Animation", "Rendering"],
+    image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=600&h=400&fit=crop",
     liveUrl: "#",
-    githubUrl: "#",
   },
   {
-    title: "Task Management App",
-    description: "Real-time collaborative task manager with teams, notifications, and analytics dashboard.",
-    tags: ["React", "Node.js", "Socket.io", "MongoDB"],
-    image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop",
+    title: "Customer Support Dashboard",
+    description: "Excel-based dashboard for tracking support metrics and customer satisfaction at Axilweb.",
+    tags: ["MS Excel", "Data Analysis", "Dashboard", "Reporting"],
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
     liveUrl: "#",
-    githubUrl: "#",
   },
   {
-    title: "AI Content Generator",
-    description: "GPT-powered content creation tool with templates, history, and export functionality.",
-    tags: ["TypeScript", "OpenAI", "Redis", "AWS"],
-    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=400&fit=crop",
+    title: "Automated Data Processing",
+    description: "Python scripts for automating repetitive data entry and processing tasks, saving hours of manual work.",
+    tags: ["Python", "Automation", "Data Processing", "Scripts"],
+    image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=600&h=400&fit=crop",
     liveUrl: "#",
-    githubUrl: "#",
   },
   {
-    title: "Fitness Tracker",
-    description: "Mobile-first workout tracking app with progress charts, meal planning, and social features.",
-    tags: ["React Native", "GraphQL", "Firebase"],
-    image: "https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?w=600&h=400&fit=crop",
+    title: "Portfolio Website",
+    description: "Modern, responsive portfolio website showcasing my work with glassmorphism and neomorphic design.",
+    tags: ["HTML", "CSS", "JavaScript", "Web Design"],
+    image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&h=400&fit=crop",
     liveUrl: "#",
-    githubUrl: "#",
   },
 ];
 
@@ -51,14 +47,14 @@ const ProjectsSection = () => {
               <span className="gradient-text">Projects</span>
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              A selection of projects that showcase my skills and passion for building 
-              great digital products.
+              A selection of projects that showcase my skills in 3D design, 
+              automation, and data management.
             </p>
           </div>
 
           {/* Projects grid */}
           <div className="grid md:grid-cols-2 gap-8">
-            {projects.map((project, index) => (
+            {projects.map((project) => (
               <div
                 key={project.title}
                 className="group glass neo-raised overflow-hidden hover:scale-[1.02] transition-all duration-500"
@@ -77,11 +73,6 @@ const ProjectsSection = () => {
                     <Button variant="glass" size="icon" asChild>
                       <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
                         <ExternalLink className="w-5 h-5" />
-                      </a>
-                    </Button>
-                    <Button variant="glass" size="icon" asChild>
-                      <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-                        <Github className="w-5 h-5" />
                       </a>
                     </Button>
                   </div>

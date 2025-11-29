@@ -1,5 +1,5 @@
 import { Button } from "./ui/button";
-import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowDown, Linkedin, Mail } from "lucide-react";
 const HeroSection = () => {
   return <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden gradient-bg">
       {/* Animated background elements */}
@@ -27,8 +27,8 @@ Rafi Ahmed Eshan</span>
 
             <p className="opacity-0 animate-slide-up animation-delay-400 text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
               A passionate{" "}
-              <span className="text-secondary font-medium">Full-Stack Developer</span>{" "}
-              crafting beautiful digital experiences with modern technologies.
+              <span className="text-secondary font-medium">Creative Professional</span>{" "}
+              specializing in 3D Design, Web Development & Automation.
             </p>
 
             <div className="opacity-0 animate-slide-up animation-delay-600 flex flex-col sm:flex-row gap-4 justify-center mb-10">
@@ -43,22 +43,18 @@ Rafi Ahmed Eshan</span>
             {/* Social links */}
             <div className="opacity-0 animate-scale-in animation-delay-600 flex justify-center gap-4">
               {[{
-              icon: Github,
-              href: "#",
-              label: "GitHub"
-            }, {
               icon: Linkedin,
-              href: "#",
+              href: "https://www.linkedin.com/in/rafi-eshan/",
               label: "LinkedIn"
             }, {
               icon: Mail,
-              href: "#contact",
+              href: "mailto:rafi.eshan@gmail.com",
               label: "Email"
             }].map(({
               icon: Icon,
               href,
               label
-            }) => <a key={label} href={href} aria-label={label} className="p-3 glass rounded-xl hover:scale-110 hover:glow-accent transition-all duration-300">
+            }) => <a key={label} href={href} aria-label={label} target={label !== "Email" ? "_blank" : undefined} rel={label !== "Email" ? "noopener noreferrer" : undefined} className="p-3 glass rounded-xl hover:scale-110 hover:glow-accent transition-all duration-300">
                   <Icon className="w-5 h-5 text-muted-foreground hover:text-accent transition-colors" />
                 </a>)}
             </div>
