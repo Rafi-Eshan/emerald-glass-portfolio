@@ -1,17 +1,15 @@
 const skills = [
-  { name: "React", level: 95 },
-  { name: "TypeScript", level: 90 },
-  { name: "Node.js", level: 85 },
-  { name: "Next.js", level: 88 },
-  { name: "Tailwind CSS", level: 92 },
-  { name: "PostgreSQL", level: 80 },
-  { name: "GraphQL", level: 78 },
-  { name: "AWS", level: 75 },
+  { name: "Blender (3D Design)", level: 85 },
+  { name: "Web Design / Front-End", level: 80 },
+  { name: "Python Automation", level: 75 },
+  { name: "Google Sheets", level: 95 },
+  { name: "MS Excel", level: 90 },
+  { name: "Live Chat Support", level: 92 },
 ];
 
 const techStack = [
-  "JavaScript", "Python", "HTML5", "CSS3", "Git", "Docker",
-  "MongoDB", "Redis", "Figma", "REST APIs", "CI/CD", "Agile"
+  "Blender", "HTML5", "CSS3", "JavaScript", "Python",
+  "Google Sheets", "MS Excel", "LiveChat", "Figma", "Git"
 ];
 
 const SkillsSection = () => {
@@ -77,9 +75,9 @@ const SkillsSection = () => {
               {/* Stats */}
               <div className="grid grid-cols-3 gap-4 mt-10">
                 {[
-                  { value: "5+", label: "Years Exp." },
-                  { value: "50+", label: "Projects" },
-                  { value: "30+", label: "Clients" },
+                  { value: "2+", label: "Years Exp." },
+                  { value: "27", label: "Age" },
+                  { value: "BD", label: "Bangladesh" },
                 ].map(({ value, label }) => (
                   <div
                     key={label}

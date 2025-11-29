@@ -1,25 +1,25 @@
-import { Code2, Palette, Rocket, Users } from "lucide-react";
+import { Box, Code2, FileSpreadsheet, Zap } from "lucide-react";
 
 const highlights = [
   {
+    icon: Box,
+    title: "3D Design",
+    description: "Creating stunning 3D visuals and animations using Blender.",
+  },
+  {
     icon: Code2,
-    title: "Clean Code",
-    description: "Writing maintainable, scalable code that stands the test of time.",
+    title: "Web Design",
+    description: "Building modern, responsive front-end experiences.",
   },
   {
-    icon: Palette,
-    title: "UI/UX Design",
-    description: "Creating intuitive interfaces with attention to every detail.",
+    icon: Zap,
+    title: "Automation",
+    description: "Streamlining workflows with Python automation scripts.",
   },
   {
-    icon: Rocket,
-    title: "Performance",
-    description: "Optimizing for speed and delivering lightning-fast experiences.",
-  },
-  {
-    icon: Users,
-    title: "Collaboration",
-    description: "Working effectively with teams to bring ideas to life.",
+    icon: FileSpreadsheet,
+    title: "Data Management",
+    description: "Expert in Google Sheets & MS Excel for data solutions.",
   },
 ];
 
@@ -43,22 +43,21 @@ const AboutSection = () => {
             {/* About text */}
             <div className="glass p-8 neo-raised">
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                I'm a full-stack developer with over 5 years of experience building 
-                web applications. My journey started with curiosity about how things 
-                work on the internet, and it has evolved into a passion for creating 
-                seamless digital experiences.
+                I'm Rafi Ahmed Eshan, a Bangladeshi creative professional with a 
+                diverse skill set spanning 3D design, web development, and automation. 
+                I love bringing ideas to life through visual design and efficient solutions.
               </p>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                I specialize in{" "}
-                <span className="text-secondary font-medium">React</span>,{" "}
-                <span className="text-secondary font-medium">TypeScript</span>, and{" "}
-                <span className="text-secondary font-medium">Node.js</span>, with a 
-                keen eye for design and user experience. I believe in writing code 
-                that's not just functional, but elegant.
+                Since April 2022, I've been working as a{" "}
+                <span className="text-secondary font-medium">Live Chat Support Agent</span> at{" "}
+                <span className="text-secondary font-medium">Axilweb</span>, providing 
+                customer support via LiveChat for Northwest Career College and Driving School.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                When I'm not coding, you'll find me exploring new technologies, 
-                contributing to open source, or sharing knowledge with the community.
+                I work extensively with{" "}
+                <span className="text-secondary font-medium">Google Sheets</span> and{" "}
+                <span className="text-secondary font-medium">MS Excel</span>, creating 
+                data-driven solutions and streamlining processes through automation.
               </p>
             </div>
 

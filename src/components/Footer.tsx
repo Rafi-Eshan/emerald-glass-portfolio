@@ -1,10 +1,11 @@
-import { Github, Linkedin, Mail, Twitter } from "lucide-react";
+import { Facebook, Instagram, Linkedin, Mail, Twitter } from "lucide-react";
 
 const socialLinks = [
-  { icon: Github, href: "#", label: "GitHub" },
-  { icon: Linkedin, href: "#", label: "LinkedIn" },
-  { icon: Twitter, href: "#", label: "Twitter" },
-  { icon: Mail, href: "#contact", label: "Email" },
+  { icon: Facebook, href: "https://www.facebook.com/rafi.eshan/", label: "Facebook" },
+  { icon: Instagram, href: "https://www.instagram.com/rafi_eshan/", label: "Instagram" },
+  { icon: Twitter, href: "https://x.com/rafi_eshan", label: "Twitter" },
+  { icon: Linkedin, href: "https://www.linkedin.com/in/rafi-eshan/", label: "LinkedIn" },
+  { icon: Mail, href: "mailto:rafi.eshan@gmail.com", label: "Email" },
 ];
 
 const Footer = () => {
@@ -19,10 +20,10 @@ const Footer = () => {
                 href="#home"
                 className="text-2xl font-bold gradient-text hover:scale-105 inline-block transition-transform"
               >
-                John Doe
+                Rafi Ahmed Eshan
               </a>
               <p className="text-sm text-muted-foreground mt-2">
-                Full-Stack Developer & Designer
+                Creative Professional | 3D Designer | Web Developer
               </p>
             </div>
 
@@ -32,6 +33,8 @@ const Footer = () => {
                 <a
                   key={label}
                   href={href}
+                  target={label !== "Email" ? "_blank" : undefined}
+                  rel={label !== "Email" ? "noopener noreferrer" : undefined}
                   aria-label={label}
                   className="p-3 glass rounded-xl hover:scale-110 hover:glow-accent transition-all duration-300"
                 >
@@ -44,7 +47,7 @@ const Footer = () => {
           {/* Copyright */}
           <div className="text-center mt-8 pt-8 border-t border-border">
             <p className="text-sm text-muted-foreground">
-              © {new Date().getFullYear()} John Doe. Built with passion and{" "}
+              © {new Date().getFullYear()} Rafi Ahmed Eshan. Built with passion and{" "}
               <span className="text-accent">♥</span>
             </p>
           </div>

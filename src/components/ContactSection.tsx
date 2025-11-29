@@ -9,19 +9,19 @@ const contactInfo = [
   {
     icon: Mail,
     label: "Email",
-    value: "hello@johndoe.com",
-    href: "mailto:hello@johndoe.com",
+    value: "rafi.eshan@gmail.com",
+    href: "mailto:rafi.eshan@gmail.com",
   },
   {
     icon: Phone,
     label: "Phone",
-    value: "+1 (555) 123-4567",
-    href: "tel:+15551234567",
+    value: "+880 1914 129924",
+    href: "tel:+8801914129924",
   },
   {
     icon: MapPin,
     label: "Location",
-    value: "San Francisco, CA",
+    value: "Bangladesh",
     href: "#",
   },
 ];
@@ -140,14 +140,29 @@ const ContactSection = () => {
                 </a>
               ))}
 
-              {/* Additional CTA */}
-              <div className="glass p-8 neo-inset text-center">
-                <p className="text-muted-foreground mb-4">
-                  Prefer to schedule a call?
+              {/* Social links */}
+              <div className="glass p-8 neo-inset">
+                <p className="text-muted-foreground mb-4 text-center">
+                  Connect with me on social media
                 </p>
-                <Button variant="accent" size="lg">
-                  Book a Meeting
-                </Button>
+                <div className="flex flex-wrap justify-center gap-3">
+                  {[
+                    { name: "Facebook", href: "https://www.facebook.com/rafi.eshan/" },
+                    { name: "Instagram", href: "https://www.instagram.com/rafi_eshan/" },
+                    { name: "Twitter", href: "https://x.com/rafi_eshan" },
+                    { name: "LinkedIn", href: "https://www.linkedin.com/in/rafi-eshan/" },
+                  ].map((social) => (
+                    <a
+                      key={social.name}
+                      href={social.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-4 py-2 glass rounded-xl text-sm font-medium text-muted-foreground hover:text-accent hover:scale-105 transition-all duration-300"
+                    >
+                      {social.name}
+                    </a>
+                  ))}
+                </div>
               </div>
             </div>
           </div>

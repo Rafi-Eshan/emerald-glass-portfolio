@@ -35,7 +35,7 @@ const Navigation = () => {
           href="#home"
           className="text-2xl font-bold gradient-text hover:scale-105 transition-transform"
         >
-          Portfolio
+          Rafi Eshan
         </a>
 
         {/* Desktop Navigation */}
